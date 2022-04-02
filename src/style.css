@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Lobster&family=Nunito&display=swap");
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: url(./img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+h2 {
+  font-size: 50px;
+  color: black;
+}
+.container {
+  width: 200px;
+  height: 200px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.6px);
+  -webkit-backdrop-filter: blur(7.6px);
+  border-radius: 30px;
+  color: black;
+}
+.container:hover {
+  cursor: pointer;
+}
+.divcha {
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.6px);
+  -webkit-backdrop-filter: blur(7.6px);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Lobster", "cursive";
+}
+.divcha:hover {
+  cursor: pointer;
+}
+.con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* margin-top: 100px; */
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.6px);
+  -webkit-backdrop-filter: blur(7.6px);
+  color: black;
+  font-family: "Nunito", sans-serif;
+  /* font-family: "Josefin Sans", sans-serif; */
+}
+.btn:hover {
+  cursor: pointer;
+}
+.sidebar {
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, #91f, #70f);
+  display: none;
+}
+
+.logo {
+  font-family: "Josefin Sans", sans-serif;
+  color: #3300ff;
+  font-weight: 900;
+  font-size: 42px;
+  margin-top: 50px;
+  margin-right: 8px;
+}
+
+.rasm {
+  width: 200px;
+  margin-left: -25px;
+}
+.nav-content {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.6px);
+  -webkit-backdrop-filter: blur(7.6px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.obshiy {
+  height: 100%;
+  display: flex;
+  padding: 10px 10px;
+  flex-direction: column;
+}
+@media screen and (max-width: 700px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .con {
+    margin-top: 200px;
+  }
+  .nav-content {
+    flex-direction: column;
+    height: 100px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .logo {
+    margin-top: -60px;
+    padding: 0;
+  }
+  .rasm {
+    margin-top: -50px;
+    margin-left: -9px;
+    padding: 0;
+  }
+  h2 {
+    font-size: 40px;
+  }
+}
